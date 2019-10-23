@@ -1,0 +1,22 @@
+This project's purpose was to develop code by a simple safe that takes a 6 bit binary number as a password and led's lit up 
+according to whether the password was correct or incorrect.  The coding language used was C, while the hardware was a breadboard
+and an ATTINY85 microcontroller with pushbuttons and leds.
+
+Hardware: two momentary pushbuttons (key0 and key1), and four leds (one green, one red,
+one blue, and one yellow).  Your hardware team has selected the ATtiny85,
+which only has 5 usable I/O pins, and so there is multiplexing of the leds
+using the Charlieplexing technique.
+
+Initialization state:  At power up/reset, the unit should be in the
+unlocked state (indicated by the green led) and in programming mode
+(indicated by the yellow led).  It will then accept a 6 bit code, using
+key0 and key1 to represent "0" and "1" respectively.  When the code is provided,
+it should move into the locked state (indicated by the red
+led), and the programming led should go off.
+
+It will now wait for a 6 bit code to be entered.  If the entry is correct,
+it will move to unlock/program mode.  If incorrect, it will flash the
+yellow led for a short time, and wait for another 6 bit input.
+
+The blue led should be used as a visual indicator to acknowledge a
+button press (i.e. a short flash for each press).
