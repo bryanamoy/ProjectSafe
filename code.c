@@ -1,3 +1,9 @@
+/*
+Author: Bryan Moy
+Student ID: 50182654
+CSE321 Project2
+*/
+
 #ifndef F_CPU
 #define F_CPU 1000000UL
 #endif
